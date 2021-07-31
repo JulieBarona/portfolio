@@ -67,14 +67,14 @@ header {
 }
 header .profile-image {
   margin-top: 50px;
-  width: 150px;
-  height: 150px;
+  width: 175px;
+  height: 175px;
   border-radius: 50%;
   border: 3px solid white;
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) rotate(10deg);
 }
 .tag {
   background-color: #efefef;
@@ -120,6 +120,14 @@ ul.skills {
 
 .skills li:nth-child(odd) {
   background: #FFA0A0;
+}
+
+.skills li:hover {
+  background: #628395;
+}
+
+.skills li:nth-child(odd):hover {
+  background: #628395;
 }
 
 footer {
