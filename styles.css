@@ -11,26 +11,27 @@ body {
   color: #222;
   background: #f7f5f0;
 }
-/* Link Styles */
 
+/* Link Styles */
 a {
   text-decoration: none;
   color: #FFE3E3;
 }
+
 a:hover {
   color: #6633ff;
 }
 
 /* Section Styles */
-
 .main-nav {
   width: 100%;
   background: #628395;
-  min-height: 30px;
+  min-height: 50px;
   padding: 10px;
   position: fixed;
   text-align: center;
 }
+
 .nav {
   display: flex;
   justify-content: space-around;
@@ -41,30 +42,43 @@ a:hover {
 }
 
 .nav .name {
-    display: block;
-    margin-right: auto;
-    color: white;
+  display: block;
+  margin-right: auto;
+  color: white;
 }
+
 .nav li {
   padding: 5px 10px 10px 10px;
 }
+
 .nav a {
   transition: all .5s;
 }
+
 .nav a:hover {
   color: white
 }
 
 header {
   text-align: center;
-  background: url('images/beach.jpg') no-repeat bottom center ;
+  background: url('images/beach.jpg') no-repeat bottom center;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
 }
+
+header.experience {
+  text-align: center;
+  background: url('images/100Days.jpg') no-repeat top center;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+
 header {
   line-height: 1.5;
 }
+
 header .profile-image {
   margin-top: 50px;
   width: 175px;
@@ -73,9 +87,11 @@ header .profile-image {
   border: 3px solid white;
   transition: all .5s;
 }
+
 header .profile-image:hover {
   transform: scale(1.2) rotate(10deg);
 }
+
 .tag {
   background-color: #efefef;
   color: black;
@@ -84,10 +100,12 @@ header .profile-image:hover {
   display: table;
   margin: 10px auto;
 }
+
 .location {
   background-color: #628395;
   color: #FFE3E3;
 }
+
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
@@ -102,7 +120,6 @@ header .profile-image:hover {
 .card:hover {
   border-color: #262A53;
 }
-
 
 ul.skills {
   padding: 0;
@@ -161,33 +178,38 @@ a.social {
   opacity: .4;
   transition: all .5s;
 }
+
 a.twitter {
   background-image: url(images/twitter.svg);
 }
+
 a.linkedin {
   background-image: url(images/linkedin.svg);
 }
+
 a.github {
   background-image: url(images/github.svg);
 }
+
 a.social:hover {
   opacity: 1;
 }
+
 .clearfix {
   clear: both;
 }
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-
   .flex {
-      display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex;
-      max-width: 1200px;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      margin: 0 auto;
-  }
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: flex;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
+  }}
 
   header {
     min-height: 470px;
@@ -200,7 +222,7 @@ a.social:hover {
 
 
   main {
-    padding-top: 20px;
+    padding-top: 20xpx;
   }
 
   main p {
@@ -213,4 +235,25 @@ a.social:hover {
     margin: 40px auto;
   }
 
+hr{
+	margin: 80px auto 80px auto;
+	border-style: dotted none none;
+	border-width: 5px;
+	width: 5%;
+	border-color: #3282b8;
+}
+
+.skills {
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+}
+.skill_img {
+  width: 80px;
+  margin: 0 15px;
+}
+
+.Projects {
+  text-align: center;
+  margin-right: auto;
 }
