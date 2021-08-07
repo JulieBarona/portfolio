@@ -15,7 +15,7 @@ body {
 /* Link Styles */
 a {
   text-decoration: none;
-  color: #262A53;
+  color: #FFE3E3;
 }
 
 a:hover {
@@ -240,7 +240,8 @@ hr{
 	border-style: dotted none none;
 	border-width: 5px;
 	width: 5%;
-	border-color: #3282b8;
+	/* border-color: #3282b8; */
+  border-color: #FFE3E3;
 }
 
 .skills-exp {
@@ -255,7 +256,7 @@ hr{
 
 .projects {
   text-align: center;
-  margin-right: auto;
+
 }
 
 .btn {
@@ -269,6 +270,64 @@ hr{
   margin-top: 50px;
 }
 
-.card-project {
-  margin-left: 50rem;
+.img-project {
+  max-width: 300px;
 }
+
+.card-img-left {
+  margin-left: 120px;
+  text-align: center;
+}
+
+  .card-img-middle {
+    margin-left: 300px;
+    text-align: center;
+  }
+  .card-img-right {
+    margin-right: 120px;
+    text-align: center;
+    }
+
+.card-text {
+  text-align: center;
+}
+
+    :root {
+      --jumbotron-padding-y: 3rem;
+    }
+
+    .jumbotron {
+      padding-top: var(--jumbotron-padding-y);
+      padding-bottom: var(--jumbotron-padding-y);
+      margin-bottom: 0;
+      background-color: #fff;
+    }
+    @media (min-width: 768px) {
+      .jumbotron {
+        padding-top: calc(var(--jumbotron-padding-y) * 2);
+        padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+      }
+    }
+
+    .jumbotron p:last-child {
+      margin-bottom: 0;
+    }
+
+    .jumbotron-heading {
+      font-weight: 300;
+    }
+
+    .jumbotron .container {
+      max-width: 40rem;
+    }
+
+    footer {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    footer p {
+      margin-bottom: .25rem;
+    }
+
+    .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
