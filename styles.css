@@ -253,7 +253,7 @@ hr{
   margin: 0 15px;
 }
 
-.Projects {
+.projects {
   text-align: center;
   margin-right: auto;
 }
@@ -267,4 +267,8 @@ hr{
 
 #contact {
   margin-top: 50px;
+}
+
+.card-project {
+  margin-left: 50rem;
 }
