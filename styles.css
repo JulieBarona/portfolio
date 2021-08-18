@@ -27,6 +27,7 @@ a:hover {
   width: 100%;
   background: #628395;
   min-height: 50px;
+  z-index:1;
   padding: 10px;
   position: fixed;
   text-align: center;
