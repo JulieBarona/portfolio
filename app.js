@@ -17,6 +17,20 @@ mongoose.connect("mongodb://localhost:27017/todolistDB", {
   useNewURLParser: true
 });
 
+var resume = require('gulp-resume');
+var rename = require('gulp-rename');
+
+gulp.task('resume', function() {
+  return gulp.src('resume.json')
+    .pipe(resume({
+      format: 'html',
+      theme: 'elegant'
+    }))
+    .pipe(rename('resume.html'))
+    .pipe(gulp.dest('.'));
+});
+
+
 const itemsSchema = {
   name: String
 };
@@ -142,6 +156,20 @@ app.post("/delete", function(req, res) {
 
 };
 
+
+resumeSchema.validate(
+  { name: "Thomas" },
+  function (err, report) {
+    if (err) {
+      console.error("The resume was invalid:", err);
+      return;
+    }
+    console.log("Resume validated successfully:", report);
+  },
+  function (err) {
+    console.error("The resume was invalid:", err);
+  }
+);
 
 app.get("/about", function(req, res) {
   res.render("about");
