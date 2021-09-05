@@ -179,7 +179,7 @@ a.social {
   opacity: .4;
   transition: all .5s;
 }
-
+/* footer images */
 a.twitter {
   background-image: url(images/twitter.svg);
 }
@@ -272,7 +272,7 @@ hr{
 
 
     :root {
-      --jumbotron-padding-y: 3rem;
+      --jumbotron-padding-y: 4rem;
     }
 
     .jumbotron {
@@ -281,12 +281,12 @@ hr{
       margin-bottom: 0;
       background-color: #fff;
     }
-    /* @media (min-width: 768px) {
+    @media (min-width: 768px) {
       .jumbotron {
         padding-top: calc(var(--jumbotron-padding-y) * 2);
         padding-bottom: calc(var(--jumbotron-padding-y) * 2);
       }
-    } */
+    }
 
     .jumbotron p:last-child {
       margin-bottom: 0;
@@ -299,6 +299,7 @@ hr{
 
     .jumbotron .container {
       max-width: 40rem;
+      padding-inline-start: 0%;
     }
 
     footer {
